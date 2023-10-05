@@ -1,0 +1,3 @@
+nfs.client.allow_async=1
+nfs.client.mount.options=vers=4.1,soft,rw,nolock,tcp
+nfs.client.nfsiod_thread_max=64

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>Label</key><string>mariadb</string>
+        <key>KeepAlive</key><true/>
+        <key>RunAtLoad</key><false/>
+        <key>LimitLoadToSessionType</key>
+        <array>
+                <string>Aqua</string>
+                <string>Background</string>
+                <string>LoginWindow</string>
+                <string>StandardIO</string>
+                <string>System</string>
+        </array>
+        <key>ProgramArguments</key>
+        <array>
+                <string>/opt/homebrew/opt/mariadb/bin/mysqld_safe</string>
+                <string>--datadir=/opt/homebrew/var/mariadb</string>
+        </array>
+        <key>WorkingDirectory</key><string>/opt/homebrew/var/mariadb</string>
+        <key>StandardOutPath</key><string>/opt/homebrew/var/log/mariadb.log.out</string>
+        <key>StandardErrorPath</key><string>/opt/homebrew/var/log/mariadb.log.err</string>
+</dict>
+</plist>
